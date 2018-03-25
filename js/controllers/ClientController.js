@@ -9,9 +9,11 @@ class ClientController{
         this._inputEmail = $('#email');
         this._inputCompany = $('#company');
         this._clientView = new ClientView($('#client-view'));
-        this._clientList = new ClientList();
-
-        this._clientView.update(this._clientDal.get());
+        
+        let clientView = this._clientView;
+        this._clientDal.get(function (data){
+            clientView.update(data);
+        });
     }
 
     get clientList(){
@@ -21,10 +23,11 @@ class ClientController{
     save(event){
         event.preventDefault();
         let client = this._newClient();
-        //this._clientList.add(client);
         this._clientDal.save(client)
-        //this._clientView.update(this._clientList.clients);
-        this._clientView.update(this._clientDal.get());
+        var clientView = this._clientView;
+        this._clientDal.get(function(data){
+            clientView.update(data);
+        });
         this._clearInputs();
     }
 

@@ -10,15 +10,15 @@
 <body class="container">
     <header class="main-header">
 		<div class="container">
-			<h1 class="main-header-titulo">
-				<a href="#">Mussum</a>
+			<h1 class="main-header-title">
+				<a href="#">Mussuns Eventis</a>
 			</h1>
 
 			<nav class="main-header-nav">
-				<a class="main-header-nav-link" href="#home">Home</a>
+				<a class="main-header-nav-link" href="#home">Homis</a>
 				<a class="main-header-nav-link" href="#mission">Missão</a>
-				<a class="main-header-nav-link" href="#about">Sobre nós</a>
-				<a class="main-header-nav-link" href="#contact">Contato</a>
+				<a class="main-header-nav-link" href="#about">Sobre</a>
+				<a class="main-header-nav-link" href="#contact">Lista de esperis</a>
 			</nav>
 		</div>
     </header>
@@ -46,19 +46,19 @@
 				<p>Quem num gosta di mé, boa gentis num é. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. A ordem dos tratores não altera o pão duris. Casamentiss faiz malandris se pirulitá.</p>
 			</section>
 			<section id="contact">
-                <h2 class="subtitle">Contato</h2>
-                <form class="form" onsubmit="clientController.save(event)">
-                    <div class="form-group">
-                        <label for="full-name">Nome completo</label>
-                        <input id="full-name" type="text" class="form-control" required />
+                <h2 class="subtitle">Lista de esperis</h2>
+                <form class="w-100" onsubmit="clientController.save(event)">
+                    <div class="d-row">
+                        <label for="full-name" class="d-cell">Nomis completus</label>
+                        <input id="full-name" type="text" class="d-cell w-100" required />
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" class="form-control" required />
+                    <div class="d-row">
+                        <label for="email" class="d-cell">E-mails</label>
+                        <input id="email" type="email" class="d-cell w-100" required />
                     </div>
-                    <div class="form-group">
-                        <label for="company">Empresa</label>
-                        <input id="company" type="text" class="form-control" required />
+                    <div class="d-row">
+                        <label for="company" class="d-cell">Empresis</label>
+                        <input id="company" type="text" class="d-cell w-100" required />
                     </div>
                     <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
@@ -72,24 +72,16 @@
 	<footer class="main-footer">
 		<div class="container">
 		</div>
-
-		<section class="main-footer-partners">
-			<div class="container">
-			</div>
-		</section>
 	</footer>
    
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script> -->
     <script src="js/models/Client.js"></script>
-    <script src="js/models/ClientList.js"></script>
     <script src="js/controllers/ClientController.js"></script>
     <script src="js/views/ClientView.js"></script>
     <script src="js/dal/ClientDal.js"></script>
     <script>
-        // Initialize Firebase
-        var config = {
+		// Initialize Firebase
+		var config = {
             apiKey: "AIzaSyDl-xdJRXnN9vDB4Pdb94hzwzW7FUXn3Ak",
             authDomain: "gamaexperience12-assignment1.firebaseapp.com",
             databaseURL: "https://gamaexperience12-assignment1.firebaseio.com",

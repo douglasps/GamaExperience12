@@ -13,13 +13,13 @@ body {
 	padding: 20px 0;
 }
 
-.main-header-titulo {
+.main-header-title {
 	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 20px;
 }
 
-.main-header-titulo a {
+.main-header-title a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -37,7 +37,6 @@ body {
 }
 
 .main-content {
-	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -57,20 +56,44 @@ body {
 	color: #FFF;
 }
 
-.main-header .container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.container section{
+	padding: 10px;
 }
 
-.main-header-nav {
-	display: flex;
+.container section#home{
+	padding: 0;
+}
+
+.d-row{
+	display: table-row;
+	width: 100%;
+}
+
+.d-cell{
+	display: table-cell;
+}
+
+.w-100{
+	width:100%;
+}
+
+#home > img{
+	width:100%;
+}
+
+#mission, #contact{
+	background-color: lightgray;
 }
 
 @media(min-width: 769px) {
-
 	.container {
 		width: 85%;	
+	}
+
+	.main-header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.subtitle {
@@ -87,57 +110,17 @@ body {
 		background-color: #9799A6;
 	}
 
-	.main-header-titulo {
+	.main-header-title {
 		margin: 0;
 	}
 
 	.main-header-nav {
 		width: auto;
+		display: flex;
 	}
 
 	.main-header-nav-link {
 		width: auto;
 		margin: 0 0 0 10px;
 	}
-
-	.main-footer-contatoForm {
-		margin-top: 0;
-		text-align: left;
-	}
-
-	.main-content-cursos-link:nth-child(3n) {
-		margin-right: 0;
-	}
-
-	.main-content-cursos-link:nth-child(3n+1) {
-		margin-left: 0;
-	}
-
-}
-
-@media(min-width: 1000px) {
-	.main-content-cursos-link {
-		margin: 1.333%;
-	}
-
-	.main-content-cursos-link:nth-child(3n) {
-		margin-right: 1.33%;
-	}
-
-	.main-content-cursos-link:nth-child(3n+1) {
-		margin-left: 1.333%;
-	}
-
-	.main-content-cursos-link:nth-child(4n) {
-		margin-right: 0;
-	}
-
-	.main-content-cursos-link:nth-child(4n+1) {
-		margin-left: 0;
-	}
-
-	.videoSobre-sobre {
-		margin-left: 1.5em;
-	}
-
 }
