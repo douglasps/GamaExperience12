@@ -1,0 +1,143 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.main-header {
+	background-color: #FFF;
+	padding: 20px 0;
+}
+
+.main-header-titulo {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.main-header-titulo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-header-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799A6;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+
+	border-bottom: 1px solid #9799A6;
+}
+
+.main-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.main-footer {
+	background-color: #324C64;
+	padding-top: 20px;
+}
+
+.main-footer .subtitle {
+	color: #FFF;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-header-nav {
+	display: flex;
+}
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitle {
+		text-align: left;
+	}
+
+	.main-header-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.main-header-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.main-header-titulo {
+		margin: 0;
+	}
+
+	.main-header-nav {
+		width: auto;
+	}
+
+	.main-header-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.main-footer-contatoForm {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.main-content-cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.main-content-cursos-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+}
+
+@media(min-width: 1000px) {
+	.main-content-cursos-link {
+		margin: 1.333%;
+	}
+
+	.main-content-cursos-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.main-content-cursos-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.main-content-cursos-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.main-content-cursos-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.videoSobre-sobre {
+		margin-left: 1.5em;
+	}
+
+}
