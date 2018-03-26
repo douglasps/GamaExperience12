@@ -2,13 +2,13 @@ class ClientController{
 
     constructor(clientDal){
 
-        this._clientDal = clientDal;
-
         let $ = document.querySelector.bind(document);
         this._inputFullName = $('#full-name');
         this._inputEmail = $('#email');
         this._inputCompany = $('#company');
+
         this._clientView = new ClientView($('#client-view'));
+        this._clientDal = new ClientDal();
         
         let clientView = this._clientView;
         this._clientDal.get(function (data){

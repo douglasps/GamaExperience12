@@ -77,22 +77,9 @@
    
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="js/models/Client.js"></script>
-    <script src="js/controllers/ClientController.js"></script>
+	<script src="js/controllers/ClientController.js"></script>
+	<script src="js/dal/ClientDal.js"></script>
     <script src="js/views/ClientView.js"></script>
-    <script src="js/dal/ClientDal.js"></script>
-    <script>
-		// Initialize Firebase
-		var config = {
-            apiKey: "AIzaSyDl-xdJRXnN9vDB4Pdb94hzwzW7FUXn3Ak",
-            authDomain: "gamaexperience12-assignment1.firebaseapp.com",
-            databaseURL: "https://gamaexperience12-assignment1.firebaseio.com",
-            projectId: "gamaexperience12-assignment1",
-            storageBucket: "gamaexperience12-assignment1.appspot.com",
-            messagingSenderId: "872231773224"
-        };
-        firebase.initializeApp(config);
-        let clientDal = new ClientDal(firebase);
-        let clientController = new ClientController(clientDal);
-    </script>
+	<script src="js/views/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,16 @@
 class ClientDal{
-    constructor(firebase){
-        this._clients = [];
+    constructor(){
+        // Initialize Firebase
+		var config = {
+            apiKey: "AIzaSyDl-xdJRXnN9vDB4Pdb94hzwzW7FUXn3Ak",
+            authDomain: "gamaexperience12-assignment1.firebaseapp.com",
+            databaseURL: "https://gamaexperience12-assignment1.firebaseio.com",
+            projectId: "gamaexperience12-assignment1",
+            storageBucket: "gamaexperience12-assignment1.appspot.com",
+            messagingSenderId: "872231773224"
+        };
+        firebase.initializeApp(config);
+
         this._firebirdRef = firebase.database().ref('clients');
     }
 
