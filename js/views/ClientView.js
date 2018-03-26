@@ -6,7 +6,7 @@ class ClientView{
 
     _template(clients){
         return `
-        <table class="table table-hover table-bordered">
+        <table class="w-100">
             <thead>
                 <tr>
                     <th>Nome completo</th>

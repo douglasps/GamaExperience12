@@ -50,7 +50,7 @@
                 <form class="w-100" onsubmit="clientController.save(event)">
                     <div class="d-row">
                         <label for="full-name" class="d-cell">Nomis completus</label>
-                        <input id="full-name" type="text" class="d-cell w-100" required />
+                        <input id="full-name" type="text" class="d-cell w-100" pattern="^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$" required />
                     </div>
                     <div class="d-row">
                         <label for="email" class="d-cell">E-mails</label>
@@ -64,7 +64,8 @@
                 </form>
                 <br>
                 <br>
-                <div id="client-view"></div>
+                <div id="client-view" class="w-100">
+				</div>
 			</section>
 		</div>
 	</main>
