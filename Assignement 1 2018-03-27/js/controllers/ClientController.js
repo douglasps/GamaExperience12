@@ -19,6 +19,9 @@ class ClientController{
         this._clientDal.save(this._newClient());
         this._clientDal.get()
             .then(data => this._update(data));
+
+        alert('The subscription was saved successfully.');
+        
         this._clearInputs();
     }
 

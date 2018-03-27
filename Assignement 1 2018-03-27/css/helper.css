@@ -84,3 +84,10 @@ th{
 tr{
     height: 20px;
 }
+
+@media(max-width: 768px) {
+    .fa{
+        padding: 10px;
+        font-size: 25px;
+    }
+}

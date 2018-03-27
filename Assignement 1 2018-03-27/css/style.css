@@ -43,7 +43,7 @@ body {
 
 .subtitle {
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 25px;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -55,8 +55,6 @@ body {
 }
 
 .container section{
-	padding: 20px;
-	min-height: 350px;
 	display: flex;
 	align-items: center;
 	align-content: center;
@@ -69,7 +67,7 @@ body {
 
 .form-client{
 	width: 85%;
-	min-height: 300px;
+	min-height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,6 +107,11 @@ section > img{
 		width: 85%;	
 	}
 
+	.container section{
+		padding: 20px;
+		min-height: 350px;
+	}
+
 	.form-client{
 		width: 400px;
 	}
@@ -145,5 +148,9 @@ section > img{
 	.main-header-nav-link {
 		width: auto;
 		margin: 0 0 0 10px;
+	}
+
+	.form-client{
+		min-height: 300px;
 	}
 }
