@@ -1,0 +1,86 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-stack-overflow {
+  background: orange;
+  color: white;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.btn{
+    padding: 5px;
+}
+
+.d-row{
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.d-cell{
+	display: table-cell;
+}
+
+.row-reverse{
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.w-100{
+	width:100%;
+}
+
+.w-75{
+	width:75%;
+}
+
+.w-50{
+	width:50%;
+}
+
+.w-25{
+	width:25%;
+}
+
+table{
+    border: solid 1px gray;
+}
+
+th{
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+tr{
+    height: 20px;
+}

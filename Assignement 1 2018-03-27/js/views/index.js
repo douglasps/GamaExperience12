@@ -1,5 +1,5 @@
 (function(){
     window.onload = function(){
-        let clientController = new ClientController();
+        this.clientController = new ClientController();
     }
 })();

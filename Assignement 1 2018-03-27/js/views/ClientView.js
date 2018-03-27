@@ -17,7 +17,7 @@ class ClientView{
             <tbody>
             ${
                 clients.map(c => 
-                `
+                `   
                     <tr>
                         <td>${c.fullName}</td>
                         <td>${c.email}</td>
@@ -28,8 +28,7 @@ class ClientView{
             </tbody>
             <tfoot>
             </tfoot>
-        </table>
-        `;
+        </table>`;
     }
 
     update(clients){

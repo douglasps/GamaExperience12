@@ -10,25 +10,20 @@ class ClientController{
         this._clientView = new ClientView($('#client-view'));
         this._clientDal = new ClientDal();
         
-        let clientView = this._clientView;
-        this._clientDal.get(function (data){
-            clientView.update(data);
-        });
-    }
-
-    get clientList(){
-        return [].concat(_clientList);
+        this._clientDal.get()
+            .then(data => this._update(data));
     }
 
     save(event){
         event.preventDefault();
-        let client = this._newClient();
-        this._clientDal.save(client)
-        var clientView = this._clientView;
-        this._clientDal.get(function(data){
-            clientView.update(data);
-        });
+        this._clientDal.save(this._newClient());
+        this._clientDal.get()
+            .then(data => this._update(data));
         this._clearInputs();
+    }
+
+    _update(data){
+        this._clientView.update(data);
     }
 
     _newClient(){

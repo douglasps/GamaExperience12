@@ -14,18 +14,18 @@ class ClientDal{
         this._firebirdRef = firebase.database().ref('clients');
     }
 
-    _refreshClients(getData, data){
+    _convertData(data){
         if(!data || !data.val()) return;
 
         let clients = data.val();
         let keys = Object.keys(clients);
         let clientList = [];
-        keys.forEach(function(key) {
+        keys.forEach(key => {
             let client = clients[key];
             clientList.push(new Client(client.fullName, client.email, client.company));
         }, this);
 
-        getData(clientList);
+        return clientList;
     }
 
     save(client){
@@ -36,10 +36,9 @@ class ClientDal{
         });
     }
 
-    get(getData){
-        let ref = this._refreshClients;
-        this._firebirdRef.once("value", function(data){ 
-            ref(getData, data); 
+    get(){
+        return new Promise(resolve =>{
+            this._firebirdRef.once("value", data => resolve(this._convertData(data)));
         });
     }
 }
