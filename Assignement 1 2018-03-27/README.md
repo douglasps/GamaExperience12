@@ -23,5 +23,8 @@ Observações:
 - Cada participante deve ter sua entrega individual.
 ```
 
+# Deployment
+There isn't any need of deployment, It was used a online tool called rawgit that previews the code direct from the github repository
+
 # Acess to the demo
 [Assignment #1 2018-03-27](https://rawgit.com/douglasps/GamaExperience12/master/Assignement%201%202018-03-27/index.html)
